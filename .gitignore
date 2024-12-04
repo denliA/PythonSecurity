@@ -1,0 +1,10 @@
+# lib Cowrie-data
+cowrie/cowrie-data/lib/cowrie/ssh_*
+cowrie/cowrie-data/lib/cowrie/downloads/*
+!cowrie/cowrie-data/lib/cowrie/downloads/.gitkeep
+cowrie/cowrie-data/lib/cowrie/tty/*
+!cowrie/cowrie-data/lib/cowrie/tty/.gitkeep
+
+# log Cowrie-data
+cowrie/cowrie-data/log/cowrie/*
+!cowrie/cowrie-data/log/cowrie/.gitkeep
