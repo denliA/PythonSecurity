@@ -8,3 +8,7 @@ cowrie/cowrie-data/lib/cowrie/tty/*
 # log Cowrie-data
 cowrie/cowrie-data/log/cowrie/*
 !cowrie/cowrie-data/log/cowrie/.gitkeep
+
+# log NIDS
+cowrie/nids/log/*
+!cowrie/nids/log/.gitkeep

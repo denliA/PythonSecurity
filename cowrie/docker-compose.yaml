@@ -12,6 +12,13 @@ services:
       - ./cowrie-data:/cowrie/cowrie-git/var
     restart: unless-stopped
 
+  nids:
+    build:
+      context: ./nids
+    container_name: nids-service
+    volumes:
+      - ./nids/logs:/app/logs
+      
 volumes:
   cowrie-config:
   cowrie-data:
