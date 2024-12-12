@@ -8,3 +8,8 @@ cowrie/cowrie-data/lib/cowrie/tty/*
 # log Cowrie-data
 cowrie/cowrie-data/log/cowrie/*
 !cowrie/cowrie-data/log/cowrie/.gitkeep
+
+#files
+exfiltrated_passwd_telnet.txt
+top-passwords-shortlist.txt
+top-usernames-shortlist.txt
