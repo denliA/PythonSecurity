@@ -1,1 +1,1 @@
-user:x:monkey
+admin:x:monkey
