@@ -1,6 +1,11 @@
 # Utiliser une image Python comme base
 FROM python:3.11-slim
 
+# Installer les dépendances système requises pour Scapy
+RUN apt-get update && apt-get install -y \
+    libpcap-dev tcpdump && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
 # Installer les dépendances nécessaires
 COPY requirements.txt /app/requirements.txt
 RUN pip install --no-cache-dir -r /app/requirements.txt
