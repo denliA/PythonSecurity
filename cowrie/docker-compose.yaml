@@ -15,6 +15,9 @@ services:
   nids:
     build:
       context: ./nids
+    environment:
+      - PYTHONUNBUFFERED=1
+    network_mode: host
     container_name: nids-service
     volumes:
       - ./nids/logs:/app/logs

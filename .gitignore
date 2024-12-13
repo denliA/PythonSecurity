@@ -12,3 +12,8 @@ cowrie/cowrie-data/log/cowrie/*
 # log NIDS
 cowrie/nids/log/*
 !cowrie/nids/log/.gitkeep
+
+#files
+exfiltrated_passwd_telnet.txt
+top-passwords-shortlist.txt
+top-usernames-shortlist.txt
