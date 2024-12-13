@@ -12,6 +12,16 @@ services:
       - ./cowrie-data:/cowrie/cowrie-git/var
     restart: unless-stopped
 
+  nids:
+    build:
+      context: ./nids
+    environment:
+      - PYTHONUNBUFFERED=1
+    network_mode: host
+    container_name: nids-service
+    volumes:
+      - ./nids/logs:/app/logs
+      
 volumes:
   cowrie-config:
   cowrie-data:
