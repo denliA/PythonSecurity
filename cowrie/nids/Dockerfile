@@ -5,6 +5,7 @@ FROM python:3.11-slim
 RUN apt-get update && apt-get install -y \
     libpcap-dev \
     tcpdump \
+    iptables \
     iputils-ping \
     iproute2 \
     curl && \

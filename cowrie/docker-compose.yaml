@@ -4,6 +4,7 @@ services:
   cowrie:
     image: cowrie/cowrie:latest
     container_name: cowrie-honeypot
+    network_mode: host
     ports:
       - "2222:2222"
       - "2223:2223"
@@ -19,6 +20,7 @@ services:
       - PYTHONUNBUFFERED=1
     network_mode: host
     container_name: nids-service
+    privileged: true
     volumes:
       - ./nids/logs:/app/logs
       

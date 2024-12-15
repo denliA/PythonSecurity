@@ -11,6 +11,7 @@ fi
 
 # Réinitialiser le fichier alerts.log
 > nids/logs/alerts.log
+# > nids/logs/requests.log
 
 # Vérifiez si le conteneur existe déjà
 if docker ps -a --format '{{.Names}}' | grep -Eq "^${SERVICE_NAME}\$"; then
